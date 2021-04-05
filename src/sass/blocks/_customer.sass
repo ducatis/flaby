@@ -1,0 +1,107 @@
+.customer
+    padding-bottom: 14%
+    &__title
+        margin-top: 19px
+    &__logo
+        display: block
+        margin: 0 auto
+        margin-top: 6%
+        &_title
+            font-family: Raleway
+            font-size: 20px
+            line-height: 30px
+            font-weight: 700
+            color: #494949
+            text-align: center
+        &_subtitle
+            font-family: Raleway
+            font-size: 15px
+            line-height: 30px
+            font-weight: 500
+            color: #7c7c7c
+            text-align: center
+    &__text
+        max-width: 571px
+        display: block
+        font-family: Raleway
+        font-size: 18px
+        line-height: 30px
+        font-weight: 500
+        color: #7c7c7c
+        text-align: center
+        margin: 0 auto
+        margin-top: 46px
+    &__slider
+        &_counter
+            display: flex
+            justify-content: center
+            margin-top: 21.5%
+    &__prev
+        &_arrow
+            position: relative
+            color: rgba(73, 73, 73, .4)
+            font-family: Raleway
+            font-size: 18px
+            line-height: 30px
+            font-weight: 700
+            margin-right: 7px
+            cursor: pointer
+            &:hover
+                color: #000
+                text-decoration: none
+            &:before
+                content: ''
+                position: absolute
+                top: 4.9px
+                left: -54px
+                width: 17px
+                height: 17px
+                border-top: 2px solid #494949 
+                border-left: 2px solid #494949 
+                opacity: 0.4
+                transform: rotate(-45deg)
+            &:after
+                content: ''
+                position: absolute
+                top: 13px
+                left: -55px
+                width: 35px
+                height: 2px
+                opacity: 0.4
+                background-color: #494949   
+    &__next
+        &_arrow
+            position: relative
+            color: #000
+            font-family: Raleway
+            font-size: 18px
+            line-height: 30px
+            font-weight: 700
+            color: rgba(73, 73, 73, .8)
+            margin-left: 7px
+            cursor: pointer
+            &:hover
+                color: rgba(73, 73, 73, .4)
+                text-decoration: none
+            &:before
+                content: ''
+                position: absolute
+                width: 35px
+                height: 2px
+                opacity: 0.4
+                background-color: #000  
+                top: 13px
+                left: 62px
+            &:after
+                content: ''
+                position: absolute
+                top: 4.9px
+                left: 78px
+                width: 17px
+                height: 17px
+                border-top: 2px solid #000
+                border-right: 2px solid #000
+                opacity: 0.4
+                transform: rotate(45deg)
+                vertical-align: middle
+        

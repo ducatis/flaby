@@ -1,0 +1,101 @@
+.plan
+    padding-bottom: 69px
+    background-image: url('../img/plan/plan_bg.png')
+    background-position: bottom center
+    background-repeat: no-repeat
+    background-size: contain
+    &__carts
+        display: flex
+        justify-content: space-between
+        margin-top: 102px
+        max-width: 1140px
+    &__cart
+        padding: 50px 77px 12px 77px
+        max-width: 322px
+        max-height: 583px
+        border: 1px solid rgba(0,0,0,0.03)
+        border-radius: 20px
+        background-color: #fff
+        background-image: url('../img/plan/cart_bg.png')
+        background-repeat: no-repeat
+        background-position: right top
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:hover
+            box-shadow: 0px 0px 51px -1px rgba(92,149,161,0.33) 
+        img
+            display: block
+            margin: 0 auto
+        &_title
+            font-family: Raleway
+            font-size: 16px
+            line-height: 1.2
+            font-weight: 700
+            color: #494949
+            text-align: center
+            margin-top: 59px         
+        &_price
+            display: flex
+            margin-left: 15%
+            &-dollar
+                margin: 18px 4px 0 0
+                font-family: Raleway
+                font-size: 20px
+                line-height: 1.2
+                font-weight: 500
+                color: #2eb0ec
+            &-number
+                background: linear-gradient(34.0deg, #6af4f9 -11%, #2eb0ec 111%)
+                font-family: Raleway
+                font-size: 72px
+                line-height: 72px
+                font-weight: 800
+                color: #2eb0ec
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+            &-text
+                font-family: Raleway
+                font-size: 20px
+                line-height: 1.2
+                font-weight: 500
+                color: #2eb0ec
+                margin-top: 48px
+        &_descr
+            margin-top: 45px
+            text-align: center
+            font-family: Raleway
+            font-size: 14px
+            line-height: 32px
+            font-weight: 500
+        &_text
+            text-align: center
+            text-align: center
+            font-family: Raleway
+            font-size: 14px
+            line-height: 32px
+            font-weight: 500
+            color: #7c7c7c
+        &_btn
+            margin-top: 52px
+            width: 150px
+            height: 50px
+            background-color: $button-color
+            border-radius: 25px
+            a
+                display: block
+                padding: 19px 42px 19px 42px
+                font-family: Raleway
+                font-size: 14px
+                line-height: 14px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 0.1em
+                color: #ffffff
+                text-decoration: none
+                &:hover
+                    border-radius: 25px
+                    background-color: #3dc0e6 
+                    box-shadow: 0px 10px 16px 0px rgba(102,212,244,0.3) 
+                &:active
+                    background-color: #1fb2dd
