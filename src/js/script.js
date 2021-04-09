@@ -58,6 +58,8 @@ window.addEventListener('DOMContentLoaded', () => {
     //     plusSlides(+1);
     // });
 
+    //Слайдер который не могу запилить
+
     const galleryContainer = document.querySelector('.gallery-container');
     const galleryControlsContainer = document.querySelector('.gallery-controls');
     const galleryControls = ['previous', 'add', 'next'];
