@@ -97,15 +97,15 @@ window.addEventListener('DOMContentLoaded', () => {
         this.updateGallery();
     }
 
-    //   Construct the carousel navigation
-    //   setNav() {
-    //     galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
+    // Construct the carousel navigation
+    // setNav() {
+        // galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
 
-    //     this.carouselArray.forEach(item => {
-    //       const nav = galleryContainer.lastElementChild;
-    //       nav.appendChild(document.createElement('li'));
-    //     }); 
-    //   }
+        // this.carouselArray.forEach(item => {
+        //   const nav = galleryContainer.lastElementChild;
+        //   nav.appendChild(document.createElement('li'));
+        // }); 
+    // }s
 
     // Construct the carousel controls
     setControls() {
@@ -156,12 +156,6 @@ window.addEventListener('DOMContentLoaded', () => {
     // exampleCarousel.setNav();
     exampleCarousel.useControls();
 
-    const slideMiddle = document.querySelector('.gallery-item-2'),
-          logoSlide = document.querySelector('.gallery-logo');
-          
-    if (slideMiddle.style.z-index == '1') {
-        logoSlide.classList.add('.hidden');
-    }
 
 
 });

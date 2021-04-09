@@ -12,15 +12,12 @@
 
 
 .gallery-item 
-    padding: 75px 80px 109px 80px
-    height: 257px
+    height:  64%
     opacity: 0
     position: absolute
     transition: all 0.3s ease-in-out
-    width: 150px
+    width: 15%
     z-index: 0
-    background-color: #fff
-    
 
 
 .gallery-item-1 
@@ -30,53 +27,41 @@
     border-radius: 10px
 
 
-.gallery-item-2
-    position: relative
-    height: 309px
-    opacity: 1
-    width: 200px
-    z-index: 1
-    
-
+.gallery-item-2,
 .gallery-item-4 
-    height: 309px
+    height: 77.5%
     opacity: 1
-    width: 200px
+    width: 20%
     z-index: 1
+    border-radius: 10px
 
 
 .gallery-item-2 
     left: 21%
     transform: translateX(-50%)
-    border-radius: 10px
-    opacity: .4
 
 
-.gallery-item-3
-    // box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1)
-    border: 1px solid rgba(0,0,0,0.07)
-    box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.07)
-    border-radius: 10px
-    height: 351px
+.gallery-item-3 
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1)
+    height: 88%
     opacity: 1
     left: 50%
     transform: translateX(-50%)
-    width: 730px
+    width: 73%
     z-index: 2
-    
+    border: 1px solid rgba(0,0,0,0.07)
+    border-radius: 10px
+
 
 .gallery-item-4 
     left: 79%
     transform: translateX(-50%)
-    border-radius: 10px
-    opacity: .4
 
 
 .gallery-item-5 
     left: 84%
     opacity: .4
     transform: translateX(-50%)
-    border-radius: 10px
 
 
 .gallery-controls 
@@ -85,75 +70,64 @@
     margin: 30px 0
 
 
-.gallery-controls 
-    button 
-        background-color: transparent
-        border: 0
-        cursor: pointer
-        font-size: 16px
-        margin: 0 20px
-        padding: 0 12px
-        text-transform: capitalize
+.gallery-controls button 
+    background-color: transparent
+    border: 0
+    cursor: pointer
+    font-size: 16px
+    margin: 0 20px
+    padding: 0 12px
+    text-transform: capitalize
 
 
-.gallery-controls 
-    button
-        &:focus 
-            outline: none
+.gallery-controls button:focus 
+    outline: none
 
 
 .gallery-controls-previous 
     position: relative
 
 
-.gallery-controls-previous
-    &:before 
-        border: solid #000
-        border-width: 0 2px 2px 0
-        content: ''
-        display: inline-block
-        height: 4px
-        left: -10px
-        padding: 2px
-        position: absolute
-        top: 0
-        transform: rotate(135deg) translateY(-50%)
-        transition: left 0.15s ease-in-out
-        width: 4px
+.gallery-controls-previous::before 
+    border: solid #000
+    border-width: 0 2px 2px 0
+    content: ''
+    display: inline-block
+    height: 4px
+    left: -10px
+    padding: 2px
+    position: absolute
+    top: 0
+    transform: rotate(135deg) translateY(-50%)
+    transition: left 0.15s ease-in-out
+    width: 4px
 
 
-.gallery-controls-previous
-    &:hover
-        left: -18px
-    &:before 
-        left: -18px
+.gallery-controls-previous:hover::before 
+    left: -18px
 
 
 .gallery-controls-next 
     position: relative
 
 
-.gallery-controls-next
-    &:before 
-        border: solid #000
-        border-width: 0 2px 2px 0
-        content: ''
-        display: inline-block
-        height: 4px
-        padding: 2px
-        position: absolute
-        right: -10px
-        top: 50%
-        transform: rotate(-45deg) translateY(-50%)
-        transition: right 0.15s ease-in-out
-        width: 4px
+.gallery-controls-next::before 
+    border: solid #000
+    border-width: 0 2px 2px 0
+    content: ''
+    display: inline-block
+    height: 4px
+    padding: 2px
+    position: absolute
+    right: -10px
+    top: 50%
+    transform: rotate(-45deg) translateY(-50%)
+    transition: right 0.15s ease-in-out
+    width: 4px
 
 
-.gallery-controls-next
-    &:hover
-        right: -18px
-    &:before 
-        right: -18px
+.gallery-controls-next:hover::before 
+    right: -18px
 
 
 .gallery-nav 
@@ -166,52 +140,13 @@
     width: 100%
 
 
-.gallery-nav 
-    li 
-        background: #ccc
-        border-radius: 50%
-        height: 10px
-        margin: 0 16px
-        width: 10px
+.gallery-nav li 
+    background: #ccc
+    border-radius: 50%
+    height: 10px
+    margin: 0 16px
+    width: 10px
 
 
 .gallery-nav li.gallery-item-selected 
     background: #555
-
-.gallery-logo
-    position: absolute
-    top: -45px
-    left: 50%
-    transform: translateX(-50%)
-.gallery-title
-    font-family: Raleway
-    font-size: 20px
-    line-height: 30px
-    font-weight: 700
-    color: #494949
-    text-align: center
-.gallery-subtitle
-    font-family: Raleway
-    font-size: 15px
-    line-height: 30px
-    font-weight: 500
-    color: #7c7c7c
-    text-align: center
-.gallery-text
-    font-family: Raleway
-    font-size: 18px
-    line-height: 30px
-    font-weight: 500
-    color: #7c7c7c
-    text-align: center
-    margin-top: 46px
-
-.hidden
-    display: none
-
-.show
-    display: block
-
-    
-
-
