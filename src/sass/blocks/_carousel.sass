@@ -1,15 +1,13 @@
 .gallery 
     width: 100%
-
-
+    
 .gallery-container 
     align-items: center
     display: flex
     height: 351px
     margin: 0 auto
-    max-width: 1000px
+    max-width: 843px
     position: relative
-
 
 .gallery-item 
     height:  64%
@@ -19,21 +17,17 @@
     width: 15%
     z-index: 0
         // Изменения Александр
-    padding: 70px
-
+    padding: 7%
 
 .gallery-item-1 
     left: 16%
     opacity: .4
     transform: translateX(-50%)
     border-radius: 10px
-            // Изменения Александр
     background-color: #fff
     .customer__block
         display: none
         
-
-
 .gallery-item-2,
 .gallery-item-4 
     height: 77.5%
@@ -41,17 +35,14 @@
     width: 20%
     z-index: 1
     border-radius: 10px
-            // Изменения Александр
     background-color: #fff
     overflow: hidden
     .customer__block
         display: none
 
-
 .gallery-item-2 
     left: 21%
     transform: translateX(-50%)
-
 
 .gallery-item-3 
     box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.07)
@@ -63,90 +54,100 @@
     z-index: 2
     border: 1px solid rgba(0,0,0,0.07)
     border-radius: 10px
-            // Изменения Александр
     background-color: #fff
-
 
 .gallery-item-4 
     left: 79%
     transform: translateX(-50%)
 
-
 .gallery-item-5 
     left: 84%
     opacity: .4
     transform: translateX(-50%)
-            // Изменения Александр
     background-color: #fff
     .customer__block
         display: none
 
-
 .gallery-controls 
     display: flex
     justify-content: center
-    margin: 30px 0
-
+    margin-top: 20px
 
 .gallery-controls button 
     background-color: transparent
     border: 0
     cursor: pointer
     font-size: 16px
-    margin: 0 20px
+    margin: 0 15px
     padding: 0 12px
     text-transform: capitalize
-
 
 .gallery-controls button:focus 
     outline: none
 
-
 .gallery-controls-previous 
     position: relative
-
+    color: rgba(73, 73, 73, .4)
+    font-family: Raleway
+    font-size: 18px
+    line-height: 30px
+    font-weight: 700
+    margin-right: 7px
+    cursor: pointer
 
 .gallery-controls-previous::before 
-    border: solid #000
-    border-width: 0 2px 2px 0
     content: ''
-    display: inline-block
-    height: 4px
-    left: -10px
-    padding: 2px
     position: absolute
-    top: 0
-    transform: rotate(135deg) translateY(-50%)
-    transition: left 0.15s ease-in-out
-    width: 4px
-
-
-.gallery-controls-previous:hover::before 
-    left: -18px
-
+    top: 4.9px
+    left: -54px
+    width: 17px
+    height: 17px
+    border-top: 2px solid #494949 
+    border-left: 2px solid #494949 
+    opacity: 0.4
+    transform: rotate(-45deg)
+.gallery-controls-previous::after
+    content: ''
+    position: absolute
+    top: 13px
+    left: -55px
+    width: 35px
+    height: 2px
+    opacity: 0.4
+    background-color: #494949
 
 .gallery-controls-next 
     position: relative
-
+    color: #000
+    font-family: Raleway
+    font-size: 18px
+    line-height: 30px
+    font-weight: 700
+    color: rgba(73, 73, 73, .8)
+    margin-left: 7px
+    cursor: pointer
 
 .gallery-controls-next::before 
-    border: solid #000
-    border-width: 0 2px 2px 0
     content: ''
-    display: inline-block
-    height: 4px
-    padding: 2px
     position: absolute
-    right: -10px
-    top: 50%
-    transform: rotate(-45deg) translateY(-50%)
-    transition: right 0.15s ease-in-out
-    width: 4px
-
-
-.gallery-controls-next:hover::before 
-    right: -18px
-
+    width: 35px
+    height: 2px
+    opacity: 0.4
+    background-color: #000  
+    top: 13px
+    left: 62px
+.gallery-controls-next::after 
+    content: ''
+    position: absolute
+    top: 4.9px
+    left: 78px
+    width: 17px
+    height: 17px
+    border-top: 2px solid #000
+    border-right: 2px solid #000
+    opacity: 0.4
+    transform: rotate(45deg)
+    vertical-align: middle
 
 .gallery-nav 
     bottom: -15px
@@ -157,14 +158,12 @@
     position: absolute
     width: 100%
 
-
 .gallery-nav li 
     background: #ccc
     border-radius: 50%
     height: 10px
     margin: 0 16px
     width: 10px
-
 
 .gallery-nav li.gallery-item-selected 
     background: #555
